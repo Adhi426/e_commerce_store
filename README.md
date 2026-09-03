@@ -1,190 +1,838 @@
-# 🛒 NEXORA — Modern Full-Stack E-Commerce Platform
+<div align="center">
 
-> **"Shop Smarter. Live Better."**
-> 
-> Developed for **CodeAlpha Full Stack Development Internship – Task 1: Simple E-commerce Store**.
+# 🛍️ NEXORA
 
----
+### ✦ SHOP SMARTER. LIVE BETTER. ✦
 
-## 🌟 Project Overview
+**A premium full-stack e-commerce experience built for the modern web.**
 
-**NEXORA** is a production-grade, full-stack e-commerce web application engineered with a modern, ultra-clean UI/UX design system, resilient REST API architecture, JWT authentication, and MongoDB database integration.
+<br>
 
-The application features a responsive design (Desktop, Laptop, Tablet, Mobile), real-time stock management, search with debouncing, multi-category filters, price sorting, interactive shopping cart, multi-step checkout wizard with demo payment simulation, user profile management, order history tracking, and a comprehensive **Admin Portal**.
+[![Live Demo](https://img.shields.io/badge/🌐_LIVE_DEMO-Visit_NEXORA-000000?style=for-the-badge)](#)
+[![GitHub](https://img.shields.io/badge/GITHUB-Repository-181717?style=for-the-badge\&logo=github)](#)
+[![Node.js](https://img.shields.io/badge/Node.js-20+-339933?style=for-the-badge\&logo=node.js\&logoColor=white)](#)
+[![Express.js](https://img.shields.io/badge/Express.js-Backend-000000?style=for-the-badge\&logo=express)](#)
+[![MongoDB](https://img.shields.io/badge/MongoDB-Database-47A248?style=for-the-badge\&logo=mongodb\&logoColor=white)](#)
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge\&logo=javascript\&logoColor=black)](#)
 
----
+<br>
 
-## ✨ Key Features
+<img src="https://readme-typing-svg.demolab.com?font=Space+Mono&size=22&duration=3000&pause=1000&color=6C63FF&center=true&vCenter=true&width=700&lines=Premium+E-Commerce+Experience;Full-Stack+%7C+MongoDB+%7C+Express.js;Secure+Authentication+%7C+REST+APIs;Built+to+Look+Good.+Built+to+Work." alt="Typing SVG" />
 
-### 🛍️ Customer Storefront
-- **Sticky Glassmorphic Header**: Blur backdrop navigation with live cart count badge, wishlist indicator, and user session menu.
-- **Hero & Category Showcase**: Interactive visual banners and category filter chips (*Electronics, Fashion, Accessories, Home & Living, Beauty, Sports*).
-- **Product Catalog (`/products.html`)**: Instant debounced search by keyword, multi-filter, price sorting (*Low to High, High to Low, Highest Rated, Newest*), and pagination.
-- **Product Details (`/product.html`)**: Image thumbnail gallery, live stock availability, quantity selector, specifications table, and customer reviews.
-- **Shopping Cart (`/cart.html`)**: Dynamic quantity adjustments, coupon discount engine, GST tax calculations, and free shipping triggers.
-- **Multi-Step Checkout (`/checkout.html`)**: Pre-filled shipping address, cart item review, payment simulation (*Cash on Delivery, Demo Credit/Debit Card, UPI Demo*), and unique Order ID generation (`NX-2026-XXXX`).
-- **Order History (`/orders.html`)**: Order status timeline tracking (*Confirmed, Processing, Shipped, Delivered, Cancelled*) and detailed digital invoice receipts.
-
-### 👑 Admin Control Center (`/admin.html`)
-- **Real-Time Analytics**: Total Revenue, Total Orders, Product Count, Registered Users, and Pending Orders.
-- **Inventory CRUD Management**: Add new products, update pricing/stock, and delete items.
-- **Order Processing**: Update order fulfillment statuses in real-time.
+</div>
 
 ---
 
-## 🛠️ Technology Stack
+## ⚡ THE IDEA
 
-| Layer | Technologies Used |
-| :--- | :--- |
-| **Frontend** | HTML5, CSS3 (Design Tokens, CSS Variables, Flexbox/Grid, Animations), Vanilla JavaScript (ES6+), Fetch API |
-| **Backend** | Node.js, Express.js (REST API Architecture) |
-| **Database** | MongoDB, Mongoose ODM (with hybrid resilient in-memory fallback store) |
-| **Security & Auth** | JSON Web Tokens (JWT), Password Hashing (`bcryptjs`), Protected Middleware, Environment Variables (`dotenv`) |
+> **What if shopping online felt less like browsing a website and more like using a premium product?**
+
+Meet **NEXORA** — a modern full-stack e-commerce platform designed around one simple philosophy:
+
+### **Beautiful interfaces. Powerful engineering. Effortless shopping.**
+
+NEXORA combines a polished frontend with a robust **Node.js + Express.js + MongoDB** backend to deliver a complete shopping workflow — from discovering products to placing and tracking orders.
+
+This project was developed as part of the **CodeAlpha Full Stack Development Internship – Task 1**.
 
 ---
 
-## 📁 Project Structure
+# ✨ EXPERIENCE NEXORA
+
+<div align="center">
+
+### 🛒 DISCOVER
+
+Explore a curated product catalog with powerful search, filtering and sorting.
+
+↓
+
+### ❤️ PERSONALIZE
+
+Save products, manage your profile and build your shopping experience.
+
+↓
+
+### 🛍️ SHOP
+
+Add products to your cart, adjust quantities and review your order.
+
+↓
+
+### 💳 CHECKOUT
+
+Move through a clean, structured checkout experience.
+
+↓
+
+### 📦 TRACK
+
+View your order history and monitor order status.
+
+</div>
+
+---
+
+# 🎯 CORE FEATURES
+
+<table>
+<tr>
+<td width="50%">
+
+### 🔐 Authentication
+
+* Secure registration
+* Login/logout
+* JWT authentication
+* bcrypt password hashing
+* Protected routes
+* Session persistence
+
+</td>
+
+<td width="50%">
+
+### 🛍️ Shopping
+
+* Product catalog
+* Product details
+* Search
+* Filtering
+* Sorting
+* Shopping cart
+* Quantity management
+
+</td>
+</tr>
+
+<tr>
+<td>
+
+### 💳 Checkout
+
+* Shipping details
+* Order summary
+* Tax calculation
+* Shipping calculation
+* Demo payment flow
+* Order confirmation
+
+</td>
+
+<td>
+
+### 📦 Orders
+
+* Order creation
+* Order history
+* Unique order IDs
+* Order status
+* Payment status
+* User-specific orders
+
+</td>
+</tr>
+
+<tr>
+<td>
+
+### 👤 User Experience
+
+* User profile
+* Editable account information
+* Wishlist
+* Responsive design
+* Dark/light experience
+* Toast notifications
+
+</td>
+
+<td>
+
+### 🧑‍💼 Admin
+
+* Admin dashboard
+* Product management
+* User management
+* Order management
+* Sales statistics
+* Order status updates
+
+</td>
+</tr>
+</table>
+
+---
+
+# 🧠 TECH STACK
+
+<div align="center">
+
+| Layer             | Technology              |
+| ----------------- | ----------------------- |
+| 🎨 Frontend       | HTML5, CSS3, JavaScript |
+| ⚙️ Backend        | Node.js                 |
+| 🚀 Server         | Express.js              |
+| 🍃 Database       | MongoDB                 |
+| 🧩 ODM            | Mongoose                |
+| 🔐 Authentication | JWT + bcrypt            |
+| 🌐 API            | REST API                |
+| 📱 UI             | Responsive CSS          |
+| 🔧 Development    | Git + GitHub            |
+
+</div>
+
+---
+
+# 🏗️ ARCHITECTURE
+
+```text
+                    ┌─────────────────────┐
+                    │       USER          │
+                    └──────────┬──────────┘
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │      FRONTEND       │
+                    │ HTML │ CSS │ JS     │
+                    └──────────┬──────────┘
+                               │
+                         REST API
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │     EXPRESS.JS      │
+                    │      SERVER         │
+                    └──────────┬──────────┘
+                               │
+                ┌──────────────┼──────────────┐
+                │              │              │
+                ▼              ▼              ▼
+           Authentication   Products       Orders
+                │              │              │
+                └──────────────┼──────────────┘
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │       MONGODB        │
+                    │                     │
+                    │ Users               │
+                    │ Products            │
+                    │ Orders              │
+                    └─────────────────────┘
+```
+
+---
+
+# 📁 PROJECT STRUCTURE
 
 ```text
 NEXORA/
 │
 ├── client/
-│   ├── index.html            # Landing Home Page
-│   ├── products.html         # Shop Listing Catalog
-│   ├── product.html          # Product Detail & Gallery View
-│   ├── cart.html             # Shopping Cart Summary
-│   ├── checkout.html         # Multi-step Checkout Wizard
-│   ├── orders.html           # User Order History Page
-│   ├── profile.html          # User Profile & Address Settings
-│   ├── login.html            # User/Admin Sign In
-│   ├── register.html         # Account Registration
-│   ├── admin.html            # Admin Management Portal
+│   ├── index.html
+│   ├── products.html
+│   ├── product.html
+│   ├── cart.html
+│   ├── checkout.html
+│   ├── orders.html
+│   ├── profile.html
+│   ├── login.html
+│   ├── register.html
 │   │
 │   ├── css/
-│   │   ├── style.css         # Tokens, typography, reset & animations
-│   │   ├── components.css    # Cards, navbar, grids, forms & buttons
-│   │   └── responsive.css    # Mobile/Tablet breakpoints
+│   │   ├── style.css
+│   │   ├── components.css
+│   │   └── responsive.css
 │   │
 │   └── js/
-│       ├── app.js            # Core App, API fetch wrapper, Toast, Cart state
-│       ├── auth.js           # Login & Registration handlers
-│       ├── products.js       # Search, filter, sorting & pagination
-│       ├── product-details.js# Product gallery & Buy Now shortcuts
-│       ├── cart.js           # Cart breakdown calculations
-│       ├── checkout.js       # Checkout wizard & demo payment
-│       ├── orders.js         # Order history & receipt modal
-│       ├── profile.js        # Profile edit form & settings
-│       └── admin.js          # Admin dashboard analytics & CRUD
+│       ├── app.js
+│       ├── auth.js
+│       ├── products.js
+│       ├── cart.js
+│       ├── checkout.js
+│       ├── orders.js
+│       └── profile.js
 │
 ├── server/
-│   ├── server.js             # Express application entrypoint
-│   ├── seedData.js           # Catalog database seeding (18+ items)
+│   ├── server.js
 │   │
 │   ├── config/
-│   │   └── db.js             # MongoDB Mongoose connection
+│   │   └── db.js
 │   │
 │   ├── models/
-│   │   ├── User.js           # User Mongoose schema
-│   │   ├── Product.js        # Product Mongoose schema
-│   │   └── Order.js          # Order Mongoose schema
+│   │   ├── User.js
+│   │   ├── Product.js
+│   │   └── Order.js
 │   │
 │   ├── routes/
-│   │   ├── authRoutes.js     # Auth API routes
-│   │   ├── productRoutes.js  # Product API routes
-│   │   ├── orderRoutes.js    # Order API routes
-│   │   └── userRoutes.js     # User & Admin stats routes
+│   │   ├── authRoutes.js
+│   │   ├── productRoutes.js
+│   │   ├── orderRoutes.js
+│   │   └── userRoutes.js
 │   │
 │   ├── controllers/
-│   │   ├── authController.js # Auth business logic
-│   │   ├── productController.js# Product CRUD logic
-│   │   ├── orderController.js# Order placement logic
-│   │   └── userController.js # Profile & Admin stats logic
+│   │   ├── authController.js
+│   │   ├── productController.js
+│   │   ├── orderController.js
+│   │   └── userController.js
 │   │
 │   └── middleware/
-│       └── authMiddleware.js # JWT protection & Admin authorization
+│       └── authMiddleware.js
 │
-├── .env                      # Environment Variables
-├── .gitignore                # Git Exclusion rules
-├── package.json              # Project dependencies & scripts
-└── README.md                 # Project documentation
+├── .env
+├── .gitignore
+├── package.json
+└── README.md
 ```
 
 ---
 
-## ⚡ Quick Start & Installation
+# 🎨 UI / UX PHILOSOPHY
 
-### Prerequisites
-- Node.js (v16+ recommended)
-- MongoDB (Local daemon or MongoDB Atlas connection string)
+NEXORA was designed around a **clean-first philosophy**.
 
-### 1. Installation
-Navigate into the `NEXORA` directory and install dependencies:
+### ✦ Minimal
+
+No unnecessary elements.
+
+### ✦ Responsive
+
+Designed for desktop, tablet and mobile.
+
+### ✦ Interactive
+
+Buttons, cards, cart actions and notifications respond immediately.
+
+### ✦ Consistent
+
+Typography, spacing, buttons, cards and components follow one visual system.
+
+### ✦ Accessible
+
+Clear hierarchy, readable typography and responsive layouts.
+
+---
+
+# 🖥️ SCREENSHOTS
+
+> Replace the placeholders below with screenshots of your actual application.
+
+## 🏠 Homepage
+
+<div align="center">
+
+<img src="screenshots/home.png" width="90%" alt="NEXORA Homepage">
+
+</div>
+
+---
+
+## 🛍️ Product Discovery
+
+<div align="center">
+
+<img src="screenshots/products.png" width="90%" alt="NEXORA Products">
+
+</div>
+
+---
+
+## 📦 Product Details
+
+<div align="center">
+
+<img src="screenshots/product-details.png" width="90%" alt="NEXORA Product Details">
+
+</div>
+
+---
+
+## 🛒 Shopping Cart
+
+<div align="center">
+
+<img src="screenshots/cart.png" width="90%" alt="NEXORA Cart">
+
+</div>
+
+---
+
+## 👤 User Profile
+
+<div align="center">
+
+<img src="screenshots/profile.png" width="90%" alt="NEXORA Profile">
+
+</div>
+
+---
+
+## 🧑‍💼 Admin Dashboard
+
+<div align="center">
+
+<img src="screenshots/admin.png" width="90%" alt="NEXORA Admin Dashboard">
+
+</div>
+
+---
+
+# 🔐 AUTHENTICATION FLOW
+
+```text
+             REGISTER
+                 │
+                 ▼
+        Validate Credentials
+                 │
+                 ▼
+          Hash Password
+                 │
+                 ▼
+          Store in MongoDB
+                 │
+                 ▼
+              LOGIN
+                 │
+                 ▼
+          Verify Password
+                 │
+                 ▼
+           Generate JWT
+                 │
+                 ▼
+        Access Protected APIs
+```
+
+Passwords are never stored as plain text.
+
+---
+
+# 🛒 SHOPPING FLOW
+
+```text
+Explore Products
+       │
+       ▼
+Search / Filter
+       │
+       ▼
+View Product
+       │
+       ▼
+Add To Cart
+       │
+       ▼
+Update Quantity
+       │
+       ▼
+Review Cart
+       │
+       ▼
+Checkout
+       │
+       ▼
+Shipping Details
+       │
+       ▼
+Order Review
+       │
+       ▼
+Demo Payment
+       │
+       ▼
+Create Order
+       │
+       ▼
+MongoDB
+       │
+       ▼
+Order Confirmation
+```
+
+---
+
+# 🗄️ DATABASE DESIGN
+
+### 👤 Users
+
+```text
+User
+├── name
+├── email
+├── password
+├── phone
+├── address
+├── role
+└── createdAt
+```
+
+### 📦 Products
+
+```text
+Product
+├── name
+├── description
+├── category
+├── price
+├── originalPrice
+├── discount
+├── images
+├── rating
+├── reviews
+├── stock
+└── createdAt
+```
+
+### 🧾 Orders
+
+```text
+Order
+├── user
+├── items
+├── shippingAddress
+├── subtotal
+├── discount
+├── shipping
+├── tax
+├── total
+├── paymentMethod
+├── paymentStatus
+├── orderStatus
+└── createdAt
+```
+
+---
+
+# 🌐 REST API
+
+## Authentication
+
+```http
+POST /api/auth/register
+POST /api/auth/login
+```
+
+## Products
+
+```http
+GET    /api/products
+GET    /api/products/:id
+POST   /api/products
+PUT    /api/products/:id
+DELETE /api/products/:id
+```
+
+## Orders
+
+```http
+GET  /api/orders
+POST /api/orders
+GET  /api/orders/:id
+```
+
+## Users
+
+```http
+GET /api/users/profile
+PUT /api/users/profile
+```
+
+---
+
+# ⚡ PERFORMANCE
+
+NEXORA is designed with performance in mind.
+
+### Implemented concepts
+
+* Efficient API requests
+* Pagination
+* Debounced search
+* Lazy image loading
+* Optimized database queries
+* Responsive layouts
+* Reusable components
+* Minimal unnecessary DOM operations
+
+The goal isn't just to make the application **look fast**.
+
+It's to make it **actually behave efficiently**.
+
+---
+
+# 🛡️ SECURITY
+
+Security considerations include:
+
+```text
+✓ Password hashing
+✓ JWT authentication
+✓ Protected routes
+✓ Authorization middleware
+✓ Input validation
+✓ Environment variables
+✓ No hardcoded database credentials
+✓ No real payment information storage
+```
+
+Sensitive configuration is kept inside environment variables.
+
+Example:
+
+```env
+MONGODB_URI=
+JWT_SECRET=
+PORT=5000
+```
+
+---
+
+# 🚀 GET STARTED
+
+## 1️⃣ Clone
+
+```bash
+git clone https://github.com/YOUR_USERNAME/NEXORA.git
+```
+
+## 2️⃣ Enter the project
+
+```bash
+cd NEXORA
+```
+
+## 3️⃣ Install dependencies
 
 ```bash
 npm install
 ```
 
-### 2. Configure Environment Variables
-Verify `.env` configuration:
+## 4️⃣ Configure environment variables
+
+Create a `.env` file:
 
 ```env
+MONGODB_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
 PORT=5000
-MONGODB_URI=mongodb://127.0.0.1:27017/nexora_db
-JWT_SECRET=nexora_super_secret_jwt_key_2026_codealpha
 ```
 
-### 3. Run Application
-Start the NEXORA Express server:
+## 5️⃣ Start the backend
 
 ```bash
 npm start
 ```
 
-The Express server will launch at:
-👉 **`http://localhost:5000`**
+## 6️⃣ Open the frontend
 
-*(Seed data with 18+ products across 6 categories will automatically populate on startup!)*
-
----
-
-## 🔑 Demo Login Credentials
-
-For quick testing, use the built-in demo credentials on the Login page:
-
-| Role | Email | Password | Access Rights |
-| :--- | :--- | :--- | :--- |
-| **Customer User** | `alex@example.com` | `user123` | Cart, Checkout, Order History, Profile |
-| **Administrator** | `admin@nexora.com` | `admin123` | Full Admin Portal, Product CRUD, Order Status Manager |
+Open the frontend through your preferred local development server.
 
 ---
 
-## 📡 REST API Documentation
+# 🧪 TESTING CHECKLIST
 
-### Auth Endpoints
-- `POST /api/auth/register` — Create a new user account
-- `POST /api/auth/login` — Sign in and receive JWT token
-- `GET  /api/auth/me` — Fetch authenticated user profile
-
-### Product Endpoints
-- `GET    /api/products` — Retrieve product catalog (Supports `search`, `category`, `sort`, `page`, `limit`)
-- `GET    /api/products/:id` — Get detailed product info by ID
-- `POST   /api/products` — *(Admin)* Create a new product
-- `PUT    /api/products/:id` — *(Admin)* Update existing product details
-- `DELETE /api/products/:id` — *(Admin)* Remove product from catalog
-
-### Order Endpoints
-- `POST   /api/orders` — Place order, reduce product stock, clear cart
-- `GET    /api/orders` — Retrieve user orders (or all orders for Admin)
-- `GET    /api/orders/:id` — Get single order details
-- `PUT    /api/orders/:id/status` — *(Admin)* Update order status
-
-### User & Admin Stats
-- `GET /api/users/profile` — Fetch user profile
-- `PUT /api/users/profile` — Update user name, phone, and shipping address
-- `GET /api/users/admin/stats` — *(Admin)* Retrieve dashboard revenue & analytics
+```text
+[✓] Registration
+[✓] Login
+[✓] Authentication
+[✓] Product listing
+[✓] Product details
+[✓] Search
+[✓] Filtering
+[✓] Sorting
+[✓] Cart
+[✓] Quantity management
+[✓] Checkout
+[✓] Order creation
+[✓] Order history
+[✓] Profile management
+[✓] Admin dashboard
+[✓] Product management
+[✓] Order management
+[✓] Responsive UI
+```
 
 ---
 
-## 👨‍💻 Internship Credit
+# 🌱 FUTURE ROADMAP
 
-This application was designed & engineered by **Adhithya** for the **CodeAlpha Full Stack Development Internship**.
+NEXORA is built with room to grow.
+
+### Version 2.0
+
+* [ ] Real payment gateway
+* [ ] Product reviews
+* [ ] Advanced wishlist
+* [ ] Email order notifications
+* [ ] Coupon system
+* [ ] Inventory analytics
+* [ ] Recommendation engine
+* [ ] Advanced admin analytics
+
+### Version 3.0
+
+* [ ] AI-powered product recommendations
+* [ ] Personalized shopping feed
+* [ ] Intelligent search
+* [ ] Voice search
+* [ ] Progressive Web App
+* [ ] Microservices architecture
+
+---
+
+# 🧑‍💻 DEVELOPMENT PHILOSOPHY
+
+This project follows a simple principle:
+
+> **Don't just build something that works. Build something people enjoy using.**
+
+Every part of NEXORA was designed around three questions:
+
+```text
+Does it work?
+     ↓
+Is it easy to use?
+     ↓
+Does it feel premium?
+```
+
+---
+
+# 🏆 CODEALPHA INTERNSHIP
+
+This project was developed as part of:
+
+### **CodeAlpha Full Stack Development Internship**
+
+**Task 1 — Simple E-Commerce Store**
+
+The project demonstrates practical experience with:
+
+```text
+Frontend Development
+        +
+Backend Development
+        +
+REST APIs
+        +
+Authentication
+        +
+MongoDB
+        +
+CRUD Operations
+        +
+Responsive UI
+```
+
+---
+
+# 📊 PROJECT HIGHLIGHTS
+
+<div align="center">
+
+### 🛍️ Full-Stack E-Commerce
+
+### 🔐 Secure Authentication
+
+### 🍃 MongoDB Database
+
+### ⚡ REST API Architecture
+
+### 📦 Complete Order Workflow
+
+### 🧑‍💼 Admin Management
+
+### 📱 Responsive Design
+
+### 🎨 Premium UI/UX
+
+</div>
+
+---
+
+# 💡 WHY NEXORA?
+
+There are thousands of e-commerce projects.
+
+NEXORA isn't trying to be another one.
+
+It's an exploration of how **engineering + design + user experience** can come together to create something that feels like a real product.
+
+```text
+              IDEA
+                ↓
+             DESIGN
+                ↓
+             CODE
+                ↓
+            DATABASE
+                ↓
+              API
+                ↓
+             PRODUCT
+                ↓
+             NEXORA
+```
+
+---
+
+# ❤️ BUILT WITH PASSION
+
+<div align="center">
+
+### Designed with curiosity.
+
+### Built with code.
+
+### Improved through iteration.
+
+<br>
+
+**NEXORA**
+
+*Shop Smarter. Live Better.*
+
+<br>
+
+---
+
+### 👨‍💻 Developed by
+
+# **Adhithya N**
+
+Full-Stack Developer • Student • Builder
+
+<br>
+
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge\&logo=github\&logoColor=white)](#)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge\&logo=linkedin\&logoColor=white)](#)
+
+<br>
+
+**If you like this project, consider giving it a ⭐**
+
+</div>
+
+---
+
+<div align="center">
+
+### ⚡ NEXORA
+
+**SHOP SMARTER. LIVE BETTER.**
+
+<br>
+
+```text
+████████████████████████████████████████████████
+              N E X O R A
+████████████████████████████████████████████████
+```
+
+<br>
+
+Made with ❤️ + ☕ + JavaScript
+
+</div>
