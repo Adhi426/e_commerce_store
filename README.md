@@ -187,4 +187,4 @@ For quick testing, use the built-in demo credentials on the Login page:
 
 ## 👨‍💻 Internship Credit
 
-This application was designed & engineered by **Adhithya & Akhash** for the **CodeAlpha Full Stack Development Internship**.
+This application was designed & engineered by **Adhithya** for the **CodeAlpha Full Stack Development Internship**.
