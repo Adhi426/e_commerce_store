@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEXORA — Shop Smarter. Live Better.</title>
+  <meta name="description" content="NEXORA is a modern, premium full-stack e-commerce store delivering top-rated electronics, fashion, accessories, home & living, and sports items.">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- STICKY NAVBAR -->
+  <header class="navbar">
+    <div class="container navbar-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">N</div>
+        <span>NEXORA</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="products.html" class="nav-link">Shop</a></li>
+        <li><a href="products.html?category=Electronics" class="nav-link">Electronics</a></li>
+        <li><a href="products.html?category=Fashion" class="nav-link">Fashion</a></li>
+        <li><a href="products.html?category=Accessories" class="nav-link">Accessories</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="products.html" class="nav-action-btn" title="Search Products">🔍</a>
+        <a href="profile.html" class="nav-action-btn" title="Saved Wishlist">❤️</a>
+        <a href="cart.html" class="nav-action-btn" title="Shopping Cart">
+          🛒
+          <span class="cart-count-badge" style="display: none;">0</span>
+        </a>
+        <a href="login.html" class="nav-action-btn" id="user-menu-btn" title="User Profile">👤</a>
+        
+        <button class="mobile-menu-btn">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="main-content">
+    
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="hero-tag">
+            <span>✨ CodeAlpha Full Stack Task 1</span>
+          </div>
+          <h1 class="hero-title">
+            Discover <span class="text-gradient">What’s Next.</span>
+          </h1>
+          <p class="hero-subtext">
+            Premium products. Smart choices. Delivered to your door with unmatched speed and elegance.
+          </p>
+          <div class="hero-btns">
+            <a href="products.html" class="btn btn-primary">Shop Catalog Now →</a>
+            <a href="products.html?sort=discount" class="btn btn-outline">Explore Deals</a>
+          </div>
+        </div>
+
+        <div class="hero-banner-card">
+          <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&auto=format&fit=crop&q=80" alt="NEXORA Premium Lifestyle Store" />
+        </div>
+      </div>
+    </section>
+
+    <!-- CATEGORIES SECTION -->
+    <section class="section">
+      <div class="container">
+        <div class="section-title-area">
+          <div>
+            <h2 class="section-h2">Shop by Category</h2>
+            <p style="color: var(--slate-500); font-size: 0.9375rem;">Browse top picks tailored to your lifestyle</p>
+          </div>
+          <a href="products.html" class="btn btn-outline" style="font-size: 0.875rem;">View All Categories →</a>
+        </div>
+
+        <div class="category-grid">
+          <a href="products.html?category=Electronics" class="category-card">
+            <div class="category-icon-wrapper">🎧</div>
+            <h3 class="category-name">Electronics</h3>
+            <span class="category-count">4 Products</span>
+          </a>
+
+          <a href="products.html?category=Fashion" class="category-card">
+            <div class="category-icon-wrapper">👔</div>
+            <h3 class="category-name">Fashion</h3>
+            <span class="category-count">3 Products</span>
+          </a>
+
+          <a href="products.html?category=Accessories" class="category-card">
+            <div class="category-icon-wrapper">⌚</div>
+            <h3 class="category-name">Accessories</h3>
+            <span class="category-count">3 Products</span>
+          </a>
+
+          <a href="products.html?category=Home%20%26%20Living" class="category-card">
+            <div class="category-icon-wrapper">☕</div>
+            <h3 class="category-name">Home & Living</h3>
+            <span class="category-count">3 Products</span>
+          </a>
+
+          <a href="products.html?category=Beauty" class="category-card">
+            <div class="category-icon-wrapper">✨</div>
+            <h3 class="category-name">Beauty</h3>
+            <span class="category-count">2 Products</span>
+          </a>
+
+          <a href="products.html?category=Sports" class="category-card">
+            <div class="category-icon-wrapper">👟</div>
+            <h3 class="category-name">Sports</h3>
+            <span class="category-count">3 Products</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PRODUCTS SECTION -->
+    <section class="section" style="background-color: #ffffff; border-top: 1px solid var(--slate-200); border-bottom: 1px solid var(--slate-200);">
+      <div class="container">
+        <div class="section-title-area">
+          <div>
+            <span class="badge badge-primary" style="margin-bottom: 0.5rem;">Handpicked Collection</span>
+            <h2 class="section-h2">Featured Products</h2>
+          </div>
+          <a href="products.html" class="btn btn-outline">Explore Full Shop →</a>
+        </div>
+
+        <div class="product-grid" id="featured-products-grid">
+          <!-- Populated dynamically via products.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE NEXORA -->
+    <section class="section">
+      <div class="container" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
+        <div style="background: #fff; padding: 2rem; border-radius: var(--radius-xl); border: 1px solid var(--slate-200); text-align: center;">
+          <div style="font-size: 2.5rem; margin-bottom: 1rem;">🚚</div>
+          <h3 style="font-family: var(--font-display); font-weight: 800; font-size: 1.25rem; margin-bottom: 0.5rem; color: var(--slate-900);">Express Shipping</h3>
+          <p style="color: var(--slate-500); font-size: 0.875rem;">Fast & reliable door delivery on orders over ₹1,000 across India.</p>
+        </div>
+
+        <div style="background: #fff; padding: 2rem; border-radius: var(--radius-xl); border: 1px solid var(--slate-200); text-align: center;">
+          <div style="font-size: 2.5rem; margin-bottom: 1rem;">🔒</div>
+          <h3 style="font-family: var(--font-display); font-weight: 800; font-size: 1.25rem; margin-bottom: 0.5rem; color: var(--slate-900);">Secure Demo Payments</h3>
+          <p style="color: var(--slate-500); font-size: 0.875rem;">Cash on Delivery, Simulated Card, and instant UPI checkout safety.</p>
+        </div>
+
+        <div style="background: #fff; padding: 2rem; border-radius: var(--radius-xl); border: 1px solid var(--slate-200); text-align: center;">
+          <div style="font-size: 2.5rem; margin-bottom: 1rem;">🎧</div>
+          <h3 style="font-family: var(--font-display); font-weight: 800; font-size: 1.25rem; margin-bottom: 0.5rem; color: var(--slate-900);">24/7 Dedicated Support</h3>
+          <p style="color: var(--slate-500); font-size: 0.875rem;">Have questions? Our support team is ready to assist you anytime.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo" style="color: #ffffff;">
+            <div class="logo-icon">N</div>
+            <span>NEXORA</span>
+          </div>
+          <p>"Shop Smarter. Live Better." Premium full-stack e-commerce store developed for CodeAlpha Internship Task 1.</p>
+        </div>
+
+        <div>
+          <h4 class="footer-h4">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Shop Catalog</a></li>
+            <li><a href="cart.html">Shopping Cart</a></li>
+            <li><a href="orders.html">My Orders</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-h4">Categories</h4>
+          <ul class="footer-links">
+            <li><a href="products.html?category=Electronics">Electronics</a></li>
+            <li><a href="products.html?category=Fashion">Fashion</a></li>
+            <li><a href="products.html?category=Accessories">Accessories</a></li>
+            <li><a href="products.html?category=Home%20%26%20Living">Home & Living</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-h4">Account & Admin</h4>
+          <ul class="footer-links">
+            <li><a href="login.html">Sign In</a></li>
+            <li><a href="register.html">Create Account</a></li>
+            <li><a href="profile.html">User Profile</a></li>
+            <li><a href="admin.html">Admin Portal</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 NEXORA. CodeAlpha Full Stack Internship Task 1. All rights reserved.</div>
+        <div style="color: var(--slate-400);">Built with Node.js, Express, MongoDB & Vanilla JavaScript</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/app.js"></script>
+  <script src="js/products.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In — NEXORA Store</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body style="background: radial-gradient(circle at 50% 0%, #eff6ff 0%, var(--slate-50) 80%); min-height: 100vh; display: flex; flex-direction: column; justify-content: center;">
+
+  <div class="container" style="max-width: 440px; padding: 2rem 1.5rem;">
+    <!-- Logo -->
+    <div style="text-align: center; margin-bottom: 2rem;">
+      <a href="index.html" class="logo" style="justify-content: center;">
+        <div class="logo-icon">N</div>
+        <span>NEXORA</span>
+      </a>
+      <p style="color: var(--slate-500); font-size: 0.875rem; margin-top: 0.5rem;">Shop Smarter. Live Better.</p>
+    </div>
+
+    <!-- Card -->
+    <div style="background: #ffffff; padding: 2.5rem; border-radius: var(--radius-xl); border: 1px solid var(--slate-200); box-shadow: var(--shadow-xl);">
+      <h2 style="font-family: var(--font-display); font-size: 1.5rem; font-weight: 800; color: var(--slate-900); margin-bottom: 0.25rem; text-align: center;">Welcome Back</h2>
+      <p style="color: var(--slate-500); font-size: 0.875rem; text-align: center; margin-bottom: 1.5rem;">Enter your email to access your account</p>
+
+      <form id="login-form">
+        <div style="margin-bottom: 1.25rem;">
+          <label style="display: block; font-weight: 700; font-size: 0.8125rem; margin-bottom: 0.35rem; color: var(--slate-700);">Email Address</label>
+          <input type="email" id="login-email" required placeholder="alex@example.com" value="alex@example.com" 
+                 style="width: 100%; padding: 0.75rem; border-radius: var(--radius-md); border: 1px solid var(--slate-300);" />
+        </div>
+
+        <div style="margin-bottom: 1.5rem;">
+          <label style="display: block; font-weight: 700; font-size: 0.8125rem; margin-bottom: 0.35rem; color: var(--slate-700);">Password</label>
+          <div style="position: relative;">
+            <input type="password" id="login-password" required placeholder="••••••••" value="user123" 
+                   style="width: 100%; padding: 0.75rem 2.5rem 0.75rem 0.75rem; border-radius: var(--radius-md); border: 1px solid var(--slate-300);" />
+            <button type="button" class="password-toggle-btn" style="position: absolute; right: 0.75rem; top: 0.75rem; color: var(--slate-400);">👁️</button>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 0.875rem; font-size: 1rem;">Sign In</button>
+      </form>
+
+      <!-- Quick Demo Login Helpers -->
+      <div style="margin-top: 1.5rem; padding-top: 1.25rem; border-top: 1px solid var(--slate-200); font-size: 0.8125rem; color: var(--slate-500);">
+        <div style="font-weight: 700; color: var(--slate-800); margin-bottom: 0.5rem; text-align: center;">⚡ Demo Quick Credentials</div>
+        <div style="display: flex; gap: 0.5rem;">
+          <button class="btn btn-outline" style="flex: 1; padding: 0.35rem; font-size: 0.75rem;" 
+                  onclick="document.getElementById('login-email').value='alex@example.com'; document.getElementById('login-password').value='user123';">
+            User Demo
+          </button>
+          <button class="btn btn-outline" style="flex: 1; padding: 0.35rem; font-size: 0.75rem; color: var(--primary);" 
+                  onclick="document.getElementById('login-email').value='admin@nexora.com'; document.getElementById('login-password').value='admin123';">
+            Admin Demo
+          </button>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 1.5rem; font-size: 0.875rem; color: var(--slate-500);">
+        Don't have an account? <a href="register.html" style="font-weight: 700; color: var(--primary);">Sign up</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>

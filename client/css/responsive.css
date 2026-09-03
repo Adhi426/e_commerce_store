@@ -1,0 +1,98 @@
+/* ==========================================================================
+   NEXORA RESPONSIVE STYLESHEET
+   ========================================================================== */
+
+/* Mobile Hamburger Menu Drawer */
+.mobile-menu-btn {
+  display: none;
+  font-size: 1.5rem;
+  color: var(--slate-800);
+}
+
+@media (max-width: 1024px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .category-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .shop-layout {
+    grid-template-columns: 1fr;
+  }
+  
+  .filter-card {
+    position: static;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+  
+  .nav-links {
+    display: none;
+  }
+  
+  .nav-links.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 4.5rem;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    border-bottom: 1px solid var(--slate-200);
+    padding: 1.5rem;
+    box-shadow: var(--shadow-lg);
+  }
+  
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .category-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .category-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-btns {
+    flex-direction: column;
+  }
+
+  .cart-table th:nth-child(2), .cart-table td:nth-child(2) {
+    display: none;
+  }
+}
